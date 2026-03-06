@@ -1,0 +1,17 @@
+# IP Address for the lancache server for dnsmasq address redirection
+# - cnames are not supported due to presence of '*' wildcard domains
+CACHE_SERVER_IP = "192.2.0.2"
+
+# All CDNs will be included in configuration generation if 
+# INCLUDE_CDNS is not defined or an empty list.  Name must
+# match with CDN names in the uklans/cache-domains/cache-domains.json
+# data file.
+INCLUDE_CDNS = []
+
+
+# Example INCLUDE_CDNS for only wargaming and steam CDNs
+# INCLUDE_CDNS = ['steam','wargaming']
+
+# Output path for the generated dnsmasq config file.
+# Defaults to lancache-redirect.conf in the script directory.
+# DNSMASQ_FILE = '/etc/dnsmasq.d/lancache-redirect.conf'
